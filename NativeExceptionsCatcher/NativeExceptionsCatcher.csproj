@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <StartupObject></StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NativeExceptionsThrower\NativeExceptionsThrower.vcxproj">
+      <Project>{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}</Project>
+      <Name>NativeExceptionsThrower</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <OutputItemType>Content</OutputItemType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="Build">
+    <Message Text="%%%%%%%%%%%%%%%% $(RemoteRootDir)" Importance="high" />
+  </Target>
+
+  
+  <Target Name="PostPublish" BeforeTargets="Publish">
+    <!--Message Text="^^^^^^^^^^^^^^^^^" Importance="high" />
+    <Error Text="HA HA HA !!!" Condition="'1' == '1'" />
+    <MakeDir Directories="C:\Users\yshefi\kishkish" /-->
+    
+  </Target>  
+
+</Project>
