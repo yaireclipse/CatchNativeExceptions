@@ -2,7 +2,7 @@
 
 Demonstrates how native exceptions are not caught by managed C# .NET Core code, on Linux.
 
-Tested on Tested on Ubuntu 16.04.2 LTS (via Bash on Ubuntu on Windows) and CentOS Linux release 7.5.1804 (via Docker for Windows).
+Tested with .NET Core 2.0, on Tested on Ubuntu 16.04.2 LTS (via Bash on Ubuntu on Windows) and CentOS Linux release 7.5.1804 (via Docker for Windows).
 
 ## How To Run The Test:
 
